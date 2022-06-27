@@ -1,0 +1,29 @@
+<html>
+<head>
+<script>
+function forloop(){
+var msg=document.getElementById("time").value;
+document.write("<p>For Loop</p>");
+for(var i=0;i<msg;i++){
+document.write("<p>"+i+"</p>");
+}
+}
+function whileloop(){
+var msg=document.getElementById("time").value;
+document.write("<p>While Loop</p>");
+var j=0;
+while(j<msg){
+document.write("<p>"+j+"</p>");
+j++;
+}
+}
+</script>
+</head>
+<body>
+<form>
+<input type="text" id="time"/>
+<button id="hai" onclick="forloop()">for</button>
+<button id="hai" onclick="whileloop()">while</button>
+</form>
+</body>
+</html>
