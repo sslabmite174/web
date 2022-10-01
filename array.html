@@ -1,31 +1,33 @@
 <html>
-<head>
-<script>
 
-</script>
+<head>
+    <script>
+
+    </script>
 </head>
+
 <body>
-<script>
-var array=[1,2,3,4]
-function viewarray(){
-document.write("<h1>ARRAY VALUES</h1>");
-for(var i=0;i<array.length;i++)
-{
-document.write("<h3>"+array[i]+"</h3>");
-}
-}
-function pusharray(){
-var i=prompt("enter the value");
-array.push(i);
-viewarray();
-}
-function delarray(){
-array.pop();
-viewarray();
-}
-</script>
-<button id="view" onclick="viewarray()">View Array</button>
-<button id="view" onclick="pusharray()">Push value</button>
-<button id="view" onclick="delarray()">Pop Element</button>
+    <script>
+        var array = [1, 2, 3, 4]
+        function viewarray() {
+            document.write("<h1>ARRAY VALUES</h1>");
+            for (var i = 0; i < array.length; i++) {
+                document.write("<h3>" + array[i] + "</h3>");
+            }
+        }
+        function pusharray() {
+            var i = prompt("enter the value");
+            array.push(i);
+            viewarray();
+        }
+        function delarray() {
+            array.pop();
+            viewarray();
+        }
+    </script>
+    <button id="view" onclick="viewarray()">View Array</button>
+    <button id="view" onclick="pusharray()">Push value</button>
+    <button id="view" onclick="delarray()">Pop Element</button>
 </body>
+
 </html>

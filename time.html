@@ -1,31 +1,34 @@
 <html>
-<head>
-<script>
-function timer(){
-var msg=document.getElementById("time").value;
-if(msg>4 && msg<17)
-{
-if(msg<12){
 
-alert("GOOD MORNING");
-}
-else{
-alert("GOOD AFTERNOON");
-}
-}
-else{
-if(msg<20)
-alert("GOOD EVENING");
-else
-alert("GOOD NIGHT");
-}
-}
-</script></head>
+<head>
+    <script>
+        function timer() {
+            var msg = document.getElementById("time").value;
+            if (msg > 4 && msg < 17) {
+                if (msg < 12) {
+
+                    alert("GOOD MORNING");
+                }
+                else {
+                    alert("GOOD AFTERNOON");
+                }
+            }
+            else {
+                if (msg < 20)
+                    alert("GOOD EVENING");
+                else
+                    alert("GOOD NIGHT");
+            }
+        }
+    </script>
+</head>
+
 <body>
-<form>
-<input type="text" id="time"/>
-<button id="hai" onclick="timer()">click</button>
-<form>
-<p id="message"></p>
+    <form>
+        <input type="text" id="time" />
+        <button id="hai" onclick="timer()">click</button>
+        <form>
+            <p id="message"></p>
 </body>
+
 </html>
